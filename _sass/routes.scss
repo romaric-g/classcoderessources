@@ -1,10 +1,10 @@
-.card.card-item {
+.card.card-route {
     font-size: 0.9rem;
     border-radius: 14px;
     border: 0.5px solid #4b4b4b;
     background-color: $body-background-color;
-    overflow: hidden;
     margin-bottom: 1.5rem;
+    overflow: hidden;
 
     .card-title {
         font-size: 1.2rem;
@@ -12,17 +12,17 @@
         margin-bottom: 0.5rem;
     }
 
-    .card-subtitle {
-        font-weight: 300;
-        margin-bottom: 1rem;
-    }
-
     .card-text {
         font-weight: 300;
     }
-  
+
+    .card-route-container {
+        height: 190px;
+    }
+
     .card-image-box {
-        height: 170px;
+        height: 100%;
+        width: 100%;
 
         img {
             height: 100%;
@@ -30,9 +30,31 @@
             object-fit: cover;
         }
     }
-  
-    .card-action {
-        text-align: center;
+
+    .card-controls {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 30px;
+
+        .card-resources-preview {
+            display: flex;
+            flex-direction: row;
+
+            .card-resource-preview {
+                overflow: hidden;
+                height: 55px;
+                margin: 0 5px;
+                border-radius: 5px;
+                flex-grow: 1;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
 
         .btn {
             display: flex;
@@ -40,7 +62,7 @@
             align-items: center;
             font-size: 0.9rem;
             font-weight: 600;
-            width: 70%;
+            width: 100%;
             margin: 0 auto;
             height: 35px;
             padding: 0;
@@ -50,28 +72,6 @@
 
             svg {
                 margin-left: 0.75rem;
-            }
-        }
-    }
-
-    .card-infos {
-        display: flex;
-        justify-content: space-between;
-
-        .card-categories {
-            display: flex;
-            
-            .card-category {
-                padding: 0 8px;
-                border-radius: 15px;
-                margin-right: 0.5rem;
-                border: 1px solid #22B8BF;
-            }
-        }
-
-        .card-difficulty {
-            p {
-                margin: 0;
             }
         }
     }

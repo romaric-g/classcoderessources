@@ -1,3 +1,9 @@
 @import  "variables";
-@import "card-item";
 @import  "bootstrap/scss/bootstrap";
+@import "card-item";
+@import "routes";
+@import "common";
+
+body, html {
+    background-color: $body-background-color;
+}
