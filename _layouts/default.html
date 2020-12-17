@@ -34,7 +34,7 @@
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Vidéos</li>
+                    <li class="list-group-item"><a href="/videos">Vidéos</a></li>
                     <li class="list-group-item"><a href="/items">Cours</a></li>
                     <li class="list-group-item">Activités</li>
                   </ul>
@@ -52,32 +52,20 @@
               <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Programmation créative</li>
-                    <li class="list-group-item">Manipuler l’information</li>
-                    <li class="list-group-item">Initiation à la Robotique</li>
-                    <li class="list-group-item">Réseau</li>
-                    <li class="list-group-item">Informatique avec des enfants</li>
-                    <li class="list-group-item">Sciences Numérique et Technologie</li>
-                    <li class="list-group-item">1,2,3 Codez</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
-                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
+                    <li class="list-group-item"><a href="/routes">Tous nos parcours</a></li>
+                    {% for route in site.routes %}
+                      <li class="list-group-item"><a href="{{ route.url }}">{{ route.title }}</a></li>
+                    {% endfor %}
+                    <li class="list-group-item">Test espace</li>
+                    <li class="list-group-item">Test espace</li>
+                    <li class="list-group-item">Test espace</li>
+                    <li class="list-group-item">Test espace</li>
+                    <li class="list-group-item">Test espace</li>
+                    <li class="list-group-item">Test espace</li>
+                    <li class="list-group-item">Test espace</li>
+                    <li class="list-group-item">Test espace</li>
+                    <li class="list-group-item">Test espace</li>
+                    <li class="list-group-item">Test espace</li>
                   </ul>
                 </div>
               </div>

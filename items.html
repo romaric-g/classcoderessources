@@ -6,41 +6,6 @@ layout: default
 
 <div class="row mt-4">
     {% for item in site.items %}
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card card-item" style="width: 100%;">
-                <div class="card-image-box">
-                    <img class="card-img-top" src="{{ item.preview }}" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <div class="card-head">
-                        <h5 class="card-title">{{ item.title }}</h5>
-                        <p>Manipuler l’information</p>
-                    </div>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="card-infos">
-                        <div class="card-categories">
-                            <p class="card-category">IA</p>
-                            <p class="card-category">Scratch</p>
-                        </div>
-                        <div class="card-difficulty">
-                            <p>Facile</p>
-                            <div class="card-points">
-                                <span class="card-point card-point-check"></span>
-                                <span class="card-point"></span>
-                                <span class="card-point"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-action">
-                        <a href="{{ item.url }}" class="btn btn-primary">
-                            Découvrir le cours
-                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.4258 6.46345L0.366516 12.1229L0.366516 0.803965L13.4258 6.46345Z" fill="#F9EFE8"/>
-                            </svg>    
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include item.html %}
     {% endfor %}
 </div>
