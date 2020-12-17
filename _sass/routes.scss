@@ -6,41 +6,57 @@
     overflow: hidden;
 
 
-    .card-image-box {
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+    .card-route-container {
+        max-height: 180px;
+
+        & > * {
+            position: relative;
+            align-self: stretch;
         }
-    }
 
-    .card-controls {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 30px;
+        .card-image-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
 
-        .card-resources-preview {
-            display: flex;
-            flex-direction: row;
-
-            .card-resource-preview {
-                overflow: hidden;
-                height: 55px;
-                margin: 0 5px;
-                border-radius: 5px;
-                flex-grow: 1;
-
-                img {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 0;
             }
         }
-
-        .btn {
-            margin-top: 1rem;
+    
+        .card-controls {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 30px;
+    
+            .card-resources-preview {
+                display: flex;
+                flex-direction: row;
+    
+                .card-resource-preview {
+                    overflow: hidden;
+                    height: 55px;
+                    margin: 0 5px;
+                    border-radius: 5px;
+                    flex-grow: 1;
+    
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+    
+            .btn {
+                margin-top: 1rem;
+            }
         }
-    }
+    } 
 }
