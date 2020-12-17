@@ -35,6 +35,8 @@ plugins:
 collections:
   items: 
     output: true
+  routes: 
+    output: true  
 
 defaults:
   - scope:
@@ -44,11 +46,21 @@ defaults:
       layout: "item"
   - scope:
       path: ""
+      type: "routes"
+    values:
+      layout: "route"
+  - scope:
+      path: ""
     values:
       layout: "default"
 
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-autoprefixer
+
 sass:
-  sass_dir: ./_scss
+  sass_dir: _sass
   style: compressed
 
 # Exclude from processing.

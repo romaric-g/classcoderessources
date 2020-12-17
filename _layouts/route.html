@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+
+<ul>
+    {% for chapters_hash in site.data.chapters[page.chapter] %}
+        {% assign chapters = chapters_hash[1] %}
+        {% for chapter in chapters %}
+            <li>
+                <h2>{{ chapter.title }}</h2>
+                <div>
+                    <ul>
+                        {% for section in chapter.sections %}
+                            <li>
+                                <h3>
+                                    {{ section.title }}
+                                </h3>
+                                <ul>
+                                    {% for item in section.items %}
+                                        <li><a href="/items/{{item}}">{{ item }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </li>
+        {% endfor %}
+    {% endfor %}
+</ul>

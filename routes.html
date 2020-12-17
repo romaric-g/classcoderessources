@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<h1>Tous les parcours</h1>
+
+<div class="row">
+    {% for route in site.routes %}
+        <div class="col-md-12">
+            <div class="card" style="width: 100%;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="card-img-top" src="{{ route.preview }}" alt="Card image cap">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ route.title }}</h5>
+                            <p class="card-text">{{route.description }}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{{ route.url }}" class="btn btn-primary">Découvrir le parcours</a>
+                    </div>
+                </div>
+                
+ 
+            </div>
+        </div>
+    {% endfor %}
+</div>
