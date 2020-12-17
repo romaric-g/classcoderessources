@@ -1,10 +1,9 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+
 ---
 
-@import
-  "bootstrap/bootstrap";
-
-.ok {
-  margin-top: 10px;
+.col-navbar-perso{
+  max-height: 100vh !important;
+  min-height: 100vh !important;
+  overflow-y: scroll !important;
 }

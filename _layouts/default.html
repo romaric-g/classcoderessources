@@ -1,17 +1,70 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "fr" }}">
   <head>
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-
-    <p class="ok">---</p>
-    <main class="page-content" aria-label="Content">
-      <div class="container">
-        {{ content }}
+    <main class="page-content h-100 w-100" aria-label="Content">
+      <div class="row h-100 w-100 m-0">
+        <div class="col-sm-3 col-navbar-perso px-0">
+          <a class="navbar-brand offset-md-2" href="#">Les ressources</br>ClassCode</a>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Les ressources
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Vidéos</li>
+                    <li class="list-group-item">Cours</li>
+                    <li class="list-group-item">pdf</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                    Tous nos parcours
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Programmation créative</li>
+                    <li class="list-group-item">Manipuler l’information</li>
+                    <li class="list-group-item">Initiation à la Robotique</li>
+                    <li class="list-group-item">Réseau</li>
+                    <li class="list-group-item">Informatique avec des enfants</li>
+                    <li class="list-group-item">Sciences Numérique et Technologie</li>
+                    <li class="list-group-item">1,2,3 Codez</li>
+                    <li class="list-group-item">L’intelligence artificielle intelligente</li>
+                    <li class="list-group-item">Réseau</li>
+                    <li class="list-group-item">Réseau</li>
+                    <li class="list-group-item">Réseau</li>
+                    <li class="list-group-item">Réseau</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9 px-5 col-navbar-perso">
+          {{ content }}
+        </div>
       </div>
     </main>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 
 </html>
