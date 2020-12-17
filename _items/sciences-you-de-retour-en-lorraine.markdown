@@ -7,8 +7,6 @@ preview: /images/previews/sciences.jpg
 original: https://pixees.fr/science-you-de-retour-en-lorraine/
 ---
 
-# SCIENCE & YOU DE RETOUR EN LORRAINE
-
 **LA PROCHAINE ÉDITION DE SCIENCE & YOU AURA LIEU EN LORRAINE EN NOVEMBRE 2021**
 
 Science & You est un événement international organisé par l’Université de Lorraine du **15 au 19 novembre 2021** autour de la culture scientifique et du partage des connaissances.
