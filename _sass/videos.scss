@@ -1,0 +1,38 @@
+
+.video-card {
+
+    .video-box {
+        position: relative;
+        .video-player {
+            position: absolute;
+            height: 60px;
+            width: 60px;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            margin: 0 auto; 
+            background-color: #F98638;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+    
+            svg {
+                height: 30%;
+            }
+        }
+    }
+
+    .video-container {
+        .video-title {
+
+        }
+    
+        .btn.btn-primary {
+            width: 300px;
+            margin-left: 0;
+        }
+    }
+}

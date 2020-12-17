@@ -2,23 +2,35 @@
 layout: default
 ---
 
-<h1>Les vidéos</h1>
+<h1 class="mt-5 font-weight-bold">Les vidéos</h1>
 
 <div class="row">
     
     {% for video_hash in site.data.videos %}
         {% assign video = video_hash[1] %}
-        <div class="col-md-12">
+        <div class="col-md-12 video-card">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 video-box align-self-start">
                     <img src="{{ video.preview }}" class="img-fluid" alt="Responsive image">
+                    <div class="video-player">
+                        <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 14.5L0.249999 28.7894L0.25 0.21058L25 14.5Z" fill="white"/>
+                        </svg>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <h2>{{ video.title }}</h2>
+                <div class="col-md-8 video-container">
+                    <h2 class="video-title">{{ video.title }}</h2>
+                    <p class="subtitle">Parcours dont elle fait partie</p>
+
                     <p>{{ video.description }}</p>
                                         
                     {% if video.item %}
-                        <a class="btn btn-primary" href="/items/{{ video.item }}">Découvrir l’ensemble du cours</a>
+                        <a class="btn btn-primary" href="/items/{{ video.item }}">
+                            Découvrir l’ensemble du cours
+                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.4258 6.46345L0.366516 12.1229L0.366516 0.803965L13.4258 6.46345Z" fill="#F9EFE8"/>
+                            </svg>
+                        </a>
                     {% endif %}
                 </div>
             </div>
