@@ -1,32 +1,30 @@
-<div class="col-md-12">
-    <div class="card card-route border-0 rounded-0" style="width: 100%;">
-        <div class="card-route-container row">
-            <div class="col-md-4">
-                <div class="card-image-box ">
-                    <img class="card-img-top" src="{{ route.preview }}" alt="Card image cap">
-                </div>
-            </div>
-            <div class="col-md-4 card-body">
-                <h5 class="card-title">{{ route.title }}</h5>
-                <p class="card-text">{{route.description }}</p>
-            </div>
-            <div class="col-md-4 card-controls">
-
-                <div class="card-resources-preview">
-                    <div class="card-resource-preview"><img src="{{ route.preview }}" alt="" srcset=""></div>
-                    <div class="card-resource-preview"><img src="{{ route.preview }}" alt="" srcset=""></div>
-                    <div class="card-resource-preview"><img src="{{ route.preview }}" alt="" srcset=""></div>
-                </div>
-
-                <a href="{{ route.url }}" class="btn btn-primary">
-                    Découvrir le parcours
-                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.4258 6.46345L0.366516 12.1229L0.366516 0.803965L13.4258 6.46345Z" fill="#F9EFE8"/>
-                    </svg>
-                </a>
+<div class="col-md-12 card card-route border-0 rounded-0" style="width: 100%;">
+    <div class="card-route-container row">
+        <div class="col-md-4">
+            <div class="card-image-box ">
+                <img class="card-img-top" src="{{ route.preview }}" alt="Card image cap">
             </div>
         </div>
-        
+        <div class="col-md-4 card-body">
+            <h5 class="card-title">{{ route.title }}</h5>
+            <p class="card-text">{{route.description }}</p>
+        </div>
+        <div class="col-md-4 card-controls">
 
+            <div class="card-resources-preview">
+                <div class="card-resource-preview"><img src="{{ route.preview }}" alt="" srcset=""></div>
+                <div class="card-resource-preview"><img src="{{ route.preview }}" alt="" srcset=""></div>
+                <div class="card-resource-preview"><img src="{{ route.preview }}" alt="" srcset=""></div>
+            </div>
+
+            <a href="{{ route.url }}" class="btn btn-primary">
+                Découvrir le parcours
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4258 6.46345L0.366516 12.1229L0.366516 0.803965L13.4258 6.46345Z" fill="#F9EFE8"/>
+                </svg>
+            </a>
+        </div>
     </div>
+    
+
 </div>

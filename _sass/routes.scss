@@ -2,13 +2,9 @@
     border-radius: 14px;
     border: 0.5px solid #4b4b4b;
     background-color: $body-background-color;
-    margin-bottom: 1.5rem;
-    overflow: hidden;
-
+    margin: 1rem 0;
 
     .card-route-container {
-        max-height: 180px;
-
         & > * {
             position: relative;
             align-self: stretch;
