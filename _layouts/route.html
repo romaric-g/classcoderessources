@@ -2,25 +2,68 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<h1 class="mt-5 text-center">Parcours: {{ page.title }}</h1>
 
+{% if page.video %}
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10 col-sm-12">
+        {% assign video = site.data.videos[page.video] %}
+        {% include video.html %}
+    </div>
+</div>
+{% endif %}
+
+{% if page.openclassroom %}
+<a class="btn btn-primary btn-classroom my-3 w-50" href="{{ page.openclassroom }}" target="_blank">
+    Voir sur Openclassroom
+    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.4258 6.46345L0.366516 12.1229L0.366516 0.803965L13.4258 6.46345Z" fill="#F9EFE8"/>
+    </svg>
+</a>
+{% endif %}
+
+<h2>Objectifs de ce parcours</h2>
 
 <ul>
+    {% for objectif in page.objectifs %}
+        <li>{{ objectif }}</li>
+    {% endfor %}
+</ul>
+
+<ul class="list-group list-group-flush">
     {% for chapters_hash in site.data.chapters[page.chapter] %}
         {% assign chapters = chapters_hash[1] %}
         {% for chapter in chapters %}
-            <li>
-                <h2>{{ chapter.title }}</h2>
+            <li class="list-group-item px-0">
+                <h3>{{ chapter.title }}</h3>
                 <div>
-                    <ul>
+                    <ul class="list-group list-group-flush">
                         {% for section in chapter.sections %}
-                            <li>
-                                <h3>
+                            <li class="list-group-item px-0">
+                                <h4 class="font-weight-light">
                                     {{ section.title }}
-                                </h3>
-                                <ul>
-                                    {% for item in section.items %}
-                                        <li><a href="/items/{{item}}">{{ item }}</a></li>
+                                </h4>
+                                <ul class="list-group list-group-flush">
+                                    {% for itemText in section.items %}
+                                        {% assign item_path = '/items/' | append: itemText | append: '.html' %}
+                                        {% assign item = site.items 
+                                            | where_exp:"item", "item.url == item_path " 
+                                            | first 
+                                        %}
+                                        <li class="list-group-item px-0">
+                                            <div class="item-preview-inline container row">
+                                                <div class="item-preview-image col-lg-3 col-md-4">
+                                                    <div class="image-box">
+                                                        <img src="{{ item.preview }}" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="item-preview-content col-lg-7 col-md-8">
+                                                    <a href="{{item.url}}">{{ item.title }}</a>
+                                                    <p>{{ item.description }}</p>
+                                                </div>
+                                            </div>
+
+                                        </li>
                                     {% endfor %}
                                 </ul>
                             </li>

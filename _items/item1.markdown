@@ -1,5 +1,6 @@
 ---
 title:  "TESTONS NOTRE PREMIER PROGRAMME"
+description: C’est quoi l’IA et ça fonctionne comment un programme d’IA ? On vous explique que ça n’a rien de magique ; et d’ailleurs allez-y, testez en entraînant une IA !
 date:   2020-04-06 01:00:00 +0100
 preview: /images/previews/0-2.jpg
 ---

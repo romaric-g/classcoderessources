@@ -1,6 +1,4 @@
 .card.card-item {
-    border-radius: 14px;
-    border: 0.5px solid #4b4b4b;
     background-color: $body-background-color;
     overflow: hidden;
     margin-bottom: 1.5rem;
@@ -44,4 +42,28 @@
             }
         }
     }
+}
+
+.item-preview-inline {
+    min-height: 100px;
+    
+    .item-preview-image {
+        position: relative;
+        
+
+        .image-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
 }
