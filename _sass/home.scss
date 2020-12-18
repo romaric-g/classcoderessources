@@ -2,13 +2,25 @@
 
 .head-section {
     margin-bottom: 1.75rem;
+    flex-direction: column;
 
     h1 {
         margin: 0;
     }
 
     .btn.btn-primary {
+        margin: 0.25rem 0;
         width: 300px;
-        margin-left: 1.5rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .head-section {
+        flex-direction: row;
+
+        .btn.btn-primary {
+            margin-left: 1.5rem;
+        }
     }
 }
