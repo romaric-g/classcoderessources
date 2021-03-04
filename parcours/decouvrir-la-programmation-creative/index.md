@@ -15,6 +15,8 @@ time: 15 heures
 level: facile
 layout: route
 authors: ["Claude Terosier", "Florent Masseglia", "Magic Lily"]
+tool: Scratch
+type: Branché 
 ---
 
 # Découvrir la programmation créative
