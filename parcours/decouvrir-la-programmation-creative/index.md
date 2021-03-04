@@ -15,6 +15,13 @@ time: 15 heures
 level: facile
 layout: route
 authors: ["Claude Terosier", "Florent Masseglia", "Magic Lily"]
+toc: [
+    "3-2-1-programmez/qu-est-ce-que-la-pensee-informatique/",
+    "3-2-1-programmez/prenez-scratch-en-main/",
+    ""
+]
+tool: Scratch
+type: Branché 
 ---
 
 # Découvrir la programmation créative

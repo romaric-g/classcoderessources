@@ -16,3 +16,5 @@ level: facile
 authors: ["Claude Terosier", "Florent Masseglia", "Magic Lily"]
 layout: route
 ---
+
+# Manipuler l'information
