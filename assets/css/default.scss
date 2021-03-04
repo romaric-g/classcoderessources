@@ -1,15 +1,14 @@
 ---
-
 ---
 
 .main-layout {
     display: flex;
     flex-direction: column;
-    
+
     .main-layout-nav {
         background-color: #22B8BF;
         width: 100%;
-        
+
         .navbar {
             flex: 1;
             background-color: #22B8BF;
@@ -26,7 +25,7 @@
     }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     .main-layout {
         flex-direction: row!important;
 
@@ -49,7 +48,7 @@
             padding: 0;
             flex-direction: column;
         }
-        
+
         .navbar-collapse, #accordion {
             width: 100%;
             margin: 0;
