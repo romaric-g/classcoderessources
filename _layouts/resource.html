@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% assign paths = page.url | split: '/' %}
+{% assign path_slug = paths[2] %}
+{% for p in site.paths %}
+  {% if p.slug == path_slug %}
+    {% assign path = p %}
+  {% endif %}
+{% endfor %}
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{{ path.url }}">{{ path.title }}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+  </ol>
+</nav>
+
+<h1 class="mt-5 font-weight-bold text-uppercase">{{ page.title }}</h1>
+{{ content }}
+<p class="font-weight-light font-italic">{{ page.date }}</p>

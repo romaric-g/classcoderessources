@@ -1,9 +1,14 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: default
 ---
+
+<h2>Ressources</h2>
+{% for resource in site.resources %}
+  <a href="{{ resource.url }}">{{ resource.title }}</a>
+{% endfor %}
+
+<h2>Parcours</h2>
+{% include paths.html %}
+
 
 <section>
     <div class="head-section d-flex mt-5 ">
@@ -18,7 +23,7 @@ layout: default
                 <h5 class="mt-2">{{ video.title }}</h5>
             </div>
         {% endfor %}
-        
+
     </div>
 </section>
 
@@ -33,5 +38,3 @@ layout: default
         {% endfor %}
     </div>
 </section>
-
-
