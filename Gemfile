@@ -32,3 +32,4 @@ gem 'jekyll-autoprefixer'
 gem 'therubyracer'
 
 gem 'jekyll-toc'
+gem "webrick", "~> 1.7"

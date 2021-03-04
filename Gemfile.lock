@@ -12,7 +12,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
-    ffi (1.13.1)
+    ffi (1.14.2)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
     i18n (1.8.5)
@@ -51,7 +51,7 @@ GEM
       kramdown (~> 2.0)
     libv8 (3.16.14.19-x86_64-linux)
     liquid (4.0.3)
-    listen (3.3.3)
+    listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
@@ -80,6 +80,7 @@ GEM
       libv8 (~> 3.16.14.15)
       ref
     unicode-display_width (1.7.0)
+    webrick (1.7.0)
 
 PLATFORMS
   ruby
@@ -95,6 +96,7 @@ DEPENDENCIES
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
+  webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.1
+   2.2.13
