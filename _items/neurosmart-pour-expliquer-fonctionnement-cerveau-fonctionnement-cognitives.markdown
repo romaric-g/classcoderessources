@@ -5,6 +5,7 @@ created: 2020-12-01T16:48:10+01:00
 author: mcourbin
 preview: /images/previews/neurosmart.png
 original: https://pixees.fr/neurosmart-pour-expliquer-le-fonctionnement-du-cerveau-et-les-fonctions-cognitives/
+link: https://www.youtube.com/watch?v=AsGijFW9P3g&feature=emb_logo
 ---
 
 # NEUROSMART, POUR EXPLIQUER LE FONCTIONNEMENT DU CERVEAU ET LES FONCTIONS COGNITIVES
@@ -13,7 +14,6 @@ Que se passe-t-il lorsqu’on a peur ? Comment notre cerveau explore-t-il l’es
 
 Neurosmart est une web application avec un module de visualisation 3D du cerveau proposant des petites animations de médiation scientifique pour expliquer le fonctionnement du cerveau et les fonctions cognitives.
 
-Lien à intégrer : https://www.youtube.com/watch?v=AsGijFW9P3g&feature=emb_logo
 
 L’idée de Neurosmart est donc de :
 

@@ -46,6 +46,7 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
+    libv8 (3.16.14.19)
     libv8 (3.16.14.19-x86_64-linux)
     liquid (4.0.3)
     listen (3.3.3)
@@ -74,6 +75,7 @@ GEM
       libv8 (~> 3.16.14.15)
       ref
     unicode-display_width (1.7.0)
+    webrick (1.7.0)
 
 PLATFORMS
   ruby
@@ -88,6 +90,7 @@ DEPENDENCIES
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
+  webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.1
+   2.2.3

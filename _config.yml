@@ -37,6 +37,8 @@ collections:
     output: true
   routes: 
     output: true  
+  videos: 
+    output: true
 
 defaults:
   - scope:
@@ -51,9 +53,14 @@ defaults:
       layout: "route"
   - scope:
       path: ""
+      type: "videos"
+    values:
+      layout: "video"
+  - scope:
+      path: ""
     values:
       layout: "default"
-
+  
 gems:
   - jekyll-feed
   - jekyll-seo-tag
