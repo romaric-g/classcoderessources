@@ -5,33 +5,4 @@
 layout: default
 ---
 
-<section>
-    <div class="head-section d-flex mt-5 ">
-        <h1 class="font-weight-bold">Les vidéos</h1>
-        <a href="/videos" class="btn btn-primary">Découvrir l’ensemble des vidéos</a>
-    </div>
-    <div class="head-content row">
-        {% for video_hash in site.data.videos %}
-            {% assign video = video_hash[1] %}
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                {% include video.html %}
-                <h5 class="mt-2">{{ video.title }}</h5>
-            </div>
-        {% endfor %}
-        
-    </div>
-</section>
-
-<section>
-    <div class="head-section d-flex mt-5 ">
-        <h1 class="font-weight-bold">Cours</h1>
-        <a href="/items" class="btn btn-primary">Découvrir l’ensemble des courss</a>
-    </div>
-    <div class="head-content row">
-        {% for item in site.items limit:3 %}
-            {% include item.html %}
-        {% endfor %}
-    </div>
-</section>
-
 
