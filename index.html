@@ -2,13 +2,10 @@
 ---
 
 <h2>Ressources</h2>
-{% for resource in site.resources %}
-  <a href="{{ resource.url }}">{{ resource.title }}</a>
-{% endfor %}
+{% include resources.html %}
 
 <h2>Parcours</h2>
 {% include paths.html %}
-
 
 <section>
     <div class="head-section d-flex mt-5 ">
