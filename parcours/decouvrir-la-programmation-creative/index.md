@@ -20,6 +20,8 @@ toc: [
     "3-2-1-programmez/prenez-scratch-en-main/",
     ""
 ]
+tool: Scratch
+type: Branché 
 ---
 
 # Découvrir la programmation créative

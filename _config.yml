@@ -35,8 +35,6 @@ plugins:
 collections:
   items: 
     output: true
-  routes: 
-    output: true  
 
 defaults:
   - scope:
@@ -44,11 +42,6 @@ defaults:
       type: "items"
     values:
       layout: "item"
-  - scope:
-      path: ""
-      type: "routes"
-    values:
-      layout: "route"
   - scope:
       path: ""
     values:

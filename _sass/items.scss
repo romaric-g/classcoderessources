@@ -1,69 +1,69 @@
-.card.card-item {
-    background-color: $body-background-color;
-    overflow: hidden;
-    margin-bottom: 1.5rem;
+// .card.card-item {
+//     background-color: $body-background-color;
+//     overflow: hidden;
+//     margin-bottom: 1.5rem;
 
-    .card-image-box {
-        height: 170px;
+//     .card-image-box {
+//         height: 170px;
 
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
+//         img {
+//             height: 100%;
+//             width: 100%;
+//             object-fit: cover;
+//         }
+//     }
   
-    .card-action {
-        text-align: center;
+//     .card-action {
+//         text-align: center;
     
-        .btn.btn-primary {
-            width: 70%;
-        }
-    }
+//         .btn.btn-primary {
+//             width: 70%;
+//         }
+//     }
 
-    .card-infos {
-        display: flex;
-        justify-content: space-between;
+//     .card-infos {
+//         display: flex;
+//         justify-content: space-between;
 
-        .card-categories {
-            display: flex;
+//         .card-categories {
+//             display: flex;
             
-            .card-category {
-                padding: 0 8px;
-                border-radius: 15px;
-                margin-right: 0.5rem;
-                border: 1px solid #22B8BF;
-            }
-        }
+//             .card-category {
+//                 padding: 0 8px;
+//                 border-radius: 15px;
+//                 margin-right: 0.5rem;
+//                 border: 1px solid #22B8BF;
+//             }
+//         }
 
-        .card-difficulty {
-            p {
-                margin: 0;
-            }
-        }
-    }
-}
+//         .card-difficulty {
+//             p {
+//                 margin: 0;
+//             }
+//         }
+//     }
+// }
 
-.item-preview-inline {
-    min-height: 100px;
+// .item-preview-inline {
+//     min-height: 100px;
     
-    .item-preview-image {
-        position: relative;
+//     .item-preview-image {
+//         position: relative;
         
 
-        .image-box {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+//         .image-box {
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             right: 0;
+//             bottom: 0;
 
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-    }
+//             img {
+//                 height: 100%;
+//                 width: 100%;
+//                 object-fit: cover;
+//             }
+//         }
+//     }
 
-}
+// }
