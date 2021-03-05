@@ -15,12 +15,6 @@ objectifs: [
     'Animer un atelier d’initiation à la programmation créative'
 ]
 structure:
-<<<<<<< HEAD
-  - name: Partie 1 - 3, 2, 1... Programmez ! 
-    resources:
-      - 40-activites-pour-40-jours-quarantaine
-      - creez-un-compte-sur-scratch
-=======
   - name: Partie 1 - 3, 2, 1... Programmez !
     resources:
       - quest-ce-que-la-pensee-informatique
@@ -33,7 +27,6 @@ structure:
       - le-jeu-du-robot-algorithme
       - qui-a-invente-les-langages-informatiques
       - comprenez-les-langages-en-jouant-au-robot
->>>>>>> 754242fc7e3576e010a7c16b374fe57b264c67b9
   - name: Partie 2 - Rendez votre programme interactif
     resources:
       - rendez-votre-programme-interactif
