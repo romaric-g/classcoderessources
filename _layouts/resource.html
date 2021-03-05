@@ -123,19 +123,18 @@ layout: default
             </div>
         {% endif %}
 
-        <h3 class="mb-4">Les autres cours liés</h3>
-        <div class="mb-3">
-            <a href="" class="w-100"><img class="w-100" src="/images/previews/0-2.jpg" alt=""></a>
-            <a href="" class="w-100">Programmez votre portrait</a>
-        </div>
-        <div class="mb-3">
-            <a href="" class="w-100"><img class="w-100" src="/images/previews/0-2.jpg" alt=""></a>
-            <a href="" class="w-100">Partagez votre programme</a>
-        </div>
-        <div class="mb-3">
-            <a href="" class="w-100"><img class="w-100" src="/images/previews/0-2.jpg" alt=""></a>
-            <a href="" class="w-100">Prenez Scratch en main</a>
-        </div>
+        <h3 class="mb-4">Les autres cours liés à {{ page.outil }}</h3>
+
+        {% for r in site.resources %}
+            {% if r.outil == page.outil %}
+                <div class="mb-3">
+                    <a href="{{ r.url }}" class="w-100"><img class="w-100" src="{{ r.preview }}" alt=""></a>
+                    <a href="{{ r.url }}" class="w-100">{{ r.title }}</a>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+
         <a href="" class="w-100"><button type="button" class="btn btn-primary">Accéder au catalogue</button></a>
     </div>
 </div>
