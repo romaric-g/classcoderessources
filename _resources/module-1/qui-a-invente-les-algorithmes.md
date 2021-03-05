@@ -9,6 +9,7 @@ age: 8
 date: 13/12/2019
 videos: 
   - https://player.vimeo.com/video/159348634
+preview: /images/previews/preview-qui-a-invente-les-algorithmes.jpg
 ---
 
 # https://openclassrooms.com/courses/decouvrir-la-programmation-creative/differenciez-programme-et-algorithme

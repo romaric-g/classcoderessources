@@ -10,6 +10,7 @@ date: 13/12/2019
 videos: 
   - https://player.vimeo.com/video/162525087?color=f18215&api=1&player_id=video_Player_0
   - https://player.vimeo.com/video/162525063?color=f18215&api=1&player_id=video_Player_1
+preview: /images/previews/preview-prenez-scratch-en-main.jpg
 ---
 
 # https://openclassrooms.com/courses/decouvrir-la-programmation-creative/faites-vos-premiers-pas-avec-scratch

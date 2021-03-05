@@ -9,6 +9,7 @@ age: 8
 date: 13/12/2019
 videos:
   - https://player.vimeo.com/video/158908176
+preview: /images/previews/preview-qui-a-invente-le-metier-a-tisser.jpg
 ---
 
 # https://openclassrooms.com/courses/decouvrir-la-programmation-creative/realisez-un-algorithme-sans-ordinateur

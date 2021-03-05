@@ -9,6 +9,7 @@ age: 8
 date: 13/12/2019
 videos: 
   - https://player.vimeo.com/video/162525061?color=f18215&api=1&player_id=video_Player_2
+preview: /images/previews/preview-programmer-votre-portrait.jpg
 ---
 
 # https://openclassrooms.com/courses/decouvrir-la-programmation-creative/programmez-votre-portrait

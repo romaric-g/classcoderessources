@@ -7,6 +7,7 @@ type: activity
 contenttype: branchee
 age: 8
 date: 13/12/2019
+preview: /images/previews/preview-raconter-une-histoire-interactive-activity.jpg
 ---
 
 # https://openclassrooms.com/courses/decouvrir-la-programmation-creative/racontez-une-histoire-interactive-avec-scratch 

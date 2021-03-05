@@ -7,6 +7,7 @@ type: cours
 contenttype: 
 age: 8
 date: 13/12/2019
+preview: /images/previews/preview-transmettre-grace-a-la-pedagogie-de-lerreur.png
 ---
 
 # https://openclassrooms.com/courses/decouvrir-la-programmation-creative/appuyez-vous-sur-la-pedagogie-de-l-erreur-pour-transmettre
