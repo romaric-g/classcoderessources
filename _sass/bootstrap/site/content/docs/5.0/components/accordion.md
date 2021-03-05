@@ -104,9 +104,3 @@ Add `.accordion-flush` to remove the default `background-color`, some borders, a
 ## Accessibility
 
 Please read the [collapse accessibility section]({{< docsref "/components/collapse#accessibility" >}}) for more information.
-
-## Sass
-
-### Variables
-
-{{< scss-docs name="accordion-variables" file="scss/_variables.scss" >}}
