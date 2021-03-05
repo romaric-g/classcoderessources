@@ -1,0 +1,17 @@
+<section>
+
+    {% for resource in site.resources %}
+    <!--UNE UNITÉ DE RÉSULTAT-->
+    <div class="col-12 d-flex justify-content-row bg-light py-2 my-3">
+      <div class="col-4 mx-2"><img src="{{resource.preview}}" width="100%" class="img-fluid" alt="Responsive image"></div>
+      <div class="col-8">
+        <h2 class="h4">{{resource.title}}</h2>
+        <p>{{resource.description}}</p>
+        <p>auteurs : {{resource.author}}</p>
+        <a href="" class="mx-2"># {{resource.type}} </a>
+        <a href="" class="mx-2"># {{resource.outil}} </a>
+      </div>
+    </div>
+    {% endfor %}
+
+</section>

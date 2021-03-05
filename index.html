@@ -20,7 +20,9 @@
 </div>
 </div>
 <div class="container mb-4">
-    {% include paths.html %}
+{% for i in (1..3) %}
+{% include paths.html path=site.paths[i] %}
+{% endfor %}
 </div>
 
 
@@ -31,7 +33,7 @@
 </div>
 </div>
 <div class="container mb-4">
-{% include resources.html %}
+{% include resource.html %}
 </div>
 
 
