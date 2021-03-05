@@ -14,11 +14,11 @@ objectifs: [
 video: video2
 openclassroom: https://openclassrooms.com/fr/courses/3075566-decouvrir-la-programmation-creative
 structure:
-  - name: Partie 1
+  - name: Partie 1 - 3, 2, 1... Programmez ! 
     resources:
       - 40-activites-pour-40-jours-quarantaine
       - creez-un-compte-sur-scratch
-  - name: Partie 2
+  - name: Partie 2 - Rendez votre programme interactif
     resources:
       - Controlez-le-chat-et-utilisez-des-boucles
       - Decouvrez-l'interface-de-Scratch
