@@ -11,12 +11,88 @@ layout: default
 {% endfor %}
 
 <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
+  <ol class="breadcrumb mb-0">
     <li class="breadcrumb-item"><a href="{{ path.url }}">{{ path.title }}</a></li>
     <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
   </ol>
 </nav>
 
-<h1 class="mt-5 font-weight-bold text-uppercase">{{ page.title }}</h1>
-{{ content }}
-<p class="font-weight-light font-italic">{{ page.date }}</p>
+<div class="row ml-0 mb-5">
+    <h1 class="w-100">{{ page.type | replace: "activity", "Activité" }}: {{ page.title }}</h1>
+    <div class="ml-0 w-100">
+        <span class="badge bg-primary">{{ page.outil }}</span>
+        {% if page.type == "activity" %}
+            <span class="badge bg-primary ml-2">{{ page.activitytype }}</span>
+        {% endif %}
+    </div>
+</div>
+<div class="row mb-5 justify-content-md-between">
+    <div class="col-md-8">
+
+        {% if page.type == "activity" %}
+            
+            <h2>Objectifs</h2>
+            <ul>
+                {% for objectif in page.objectifs %}
+                    <li>{{ objectif }}</li>
+                {% endfor %}
+            </ul>
+
+            <h2>Matériel nécessaire</h2>
+            <ul>
+                {% for n in page.needed %}
+                    <li>{{ n }}</li>
+                {% endfor %}
+            </ul>
+
+        {% endif %}
+
+        {{ content }}
+        <div class="mb-5 mb-md-0 justify-content-center justify-content-md-between d-flex flex-wrap w-100">
+            <a href="" class="justify-content-center mb-2 px-2 px-md-0 "><button type="button" class="btn btn-primary">
+                <p class="m-0 fw-bold">Cours précédent</p>
+                <p class="m-0">Titre du cours précédent</p>
+            </button></a>
+            <a href="" class="justify-content-center px-2 px-md-0"><button type="button" class="btn btn-primary">
+                <p class=" m-0 fw-bold">Cours suivant</p>
+                <p class="m-0">Titre du cours suivant</p>
+            </button></a>
+        </div>
+    </div>
+        
+    <div class="col-md-4 col-lg-3">
+        <div class="w-100 d-none d-md-block mb-5">
+            <h3>Informations utiles :</h3>
+            <ul>
+                <li>Outil utilisé : <span>Scratch</span></li>
+                <li>Age minimum : <span>8 ans </span></li>
+                <li>Durée : <span>1h +</span></li>
+            </ul>
+        </div>
+        <div class="mb-5 w-100">
+            <div class="mb-3 d-flex flex-wrap">
+                <h3 class="mb-1">Cours suivant</h3>
+                <span class="badge badge-primary ml-2 d-flex align-self-center">#Scratch</span>
+            </div>
+            <div class="">
+                <a href="" class="w-100"><img class="w-100" src="/images/previews/0-2.jpg" alt=""></a>
+                <a href="" class="w-100">Programmez votre portrait</a>
+            </div>
+        </div>
+
+        <h3 class="mb-4">Les autres cours liés</h3>
+        <div class="mb-3">
+            <a href="" class="w-100"><img class="w-100" src="/images/previews/0-2.jpg" alt=""></a>
+            <a href="" class="w-100">Programmez votre portrait</a>
+        </div>
+        <div class="mb-3">
+            <a href="" class="w-100"><img class="w-100" src="/images/previews/0-2.jpg" alt=""></a>
+            <a href="" class="w-100">Partagez votre programme</a>
+        </div>
+        <div class="mb-3">
+            <a href="" class="w-100"><img class="w-100" src="/images/previews/0-2.jpg" alt=""></a>
+            <a href="" class="w-100">Prenez Scratch en main</a>
+        </div>
+        <a href="" class="w-100"><button type="button" class="btn btn-primary">Accéder au catalogue</button></a>
+    </div>
+</div>

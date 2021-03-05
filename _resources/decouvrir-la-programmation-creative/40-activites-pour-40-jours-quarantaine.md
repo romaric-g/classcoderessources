@@ -1,6 +1,19 @@
 ---
 title: 40 activités pour passer 40 jours en quarantaine
 type: activity
+outil: scratch
+age: 8 ans
+time: 1h +
+activitytype: branché
+objectifs: [
+    'Être capable d’ajouter des lutins et des arrières plans', 
+    'Utiliser des blocs d’initialisations, de mouvements, et d’apparences'
+]
+needed: [
+    'Au moins 1 ordinateur pour 2 enfants, muni d’une connection internet et du logiciel Scratch',
+    'De quoi écrire (sur papier)',
+    'Un vidéo-projecteur (si possible)'
+]
 date: 2020-11-03T07:42:23+01:00
 created: 2020-03-18T15:39:13+01:00
 author: tvieville
