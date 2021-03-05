@@ -17,6 +17,38 @@ layout: default
   </ol>
 </nav>
 
+{% assign currentResource = paths[3] | remove: ".html" %}
+
+{% for part in path.structure %}
+    {% for resource in part.resources %}
+        {% if getNext == true %}
+            {% assign getNext = false %}
+            {% assign nextName = resource %}
+        {% endif %}
+        {% if resource == currentResource %}
+            {% assign getNext = true %}
+            {% assign prevName = lastResource %}
+        {% endif %}
+        {% assign lastResource = resource %}
+    {% endfor %}
+{% endfor %}
+
+{% if nextName %}
+    {% for r in site.resources %}
+        {% if r.slug == nextName %}
+            {% assign next = r %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if prevName %}
+    {% for r in site.resources %}
+        {% if r.slug == prevName %}
+            {% assign prev = r %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
 <div class="row ml-0 mb-5">
     <h1 class="w-100">{{ page.type | replace: "activity", "Activité" }}: {{ page.title }}</h1>
     <div class="ml-0 w-100">
@@ -49,14 +81,23 @@ layout: default
 
         {{ content }}
         <div class="mb-5 mb-md-0 justify-content-center justify-content-md-between d-flex flex-wrap w-100">
-            <a href="" class="justify-content-center mb-2 px-2 px-md-0 "><button type="button" class="btn btn-primary">
-                <p class="m-0 fw-bold">Cours précédent</p>
-                <p class="m-0">Titre du cours précédent</p>
-            </button></a>
-            <a href="" class="justify-content-center px-2 px-md-0"><button type="button" class="btn btn-primary">
-                <p class=" m-0 fw-bold">Cours suivant</p>
-                <p class="m-0">Titre du cours suivant</p>
-            </button></a>
+            {% if prev %}
+                <a href="{{ prev.url }}" class="justify-content-center mb-2 px-2 px-md-0 ">
+                    <button type="button" class="btn btn-primary">
+                        <p class="m-0 fw-bold">Cours précédent</p>
+                        <p class="m-0">{{ prev.title }}</p>
+                    </button>
+                </a>
+            {% endif %}
+            {% if next %}
+                <a href="{{ next.url }}" class="justify-content-center px-2 px-md-0">
+                    <button type="button" class="btn btn-primary">
+                        <p class=" m-0 fw-bold">Cours suivant</p>
+                        <p class="m-0">{{ next.title }}</p>
+                    </button>
+                </a>
+            {% endif %}
+
         </div>
     </div>
         
@@ -69,30 +110,31 @@ layout: default
                 <li>Durée : <span>1h +</span></li>
             </ul>
         </div>
-        <div class="mb-5 w-100">
-            <div class="mb-3 d-flex flex-wrap">
-                <h3 class="mb-1">Cours suivant</h3>
-                <span class="badge badge-primary ml-2 d-flex align-self-center">#Scratch</span>
+        {% if next %}
+            <div class="mb-5 w-100">
+                <div class="mb-3 d-flex flex-wrap">
+                    <h3 class="mb-1">Cours suivant</h3>
+                    <span class="badge badge-primary ml-2 d-flex align-self-center">{{ next.outil }}</span>
+                </div>
+                <div class="">
+                    <a href="" class="w-100"><img class="w-100" src="{{ next.preview }}" alt=""></a>
+                    <a href="{{ next.url }}"" class="w-100">{{ next.title }}</a>
+                </div>
             </div>
-            <div class="">
-                <a href="" class="w-100"><img class="w-100" src="/images/previews/0-2.jpg" alt=""></a>
-                <a href="" class="w-100">Programmez votre portrait</a>
-            </div>
-        </div>
+        {% endif %}
 
-        <h3 class="mb-4">Les autres cours liés</h3>
-        <div class="mb-3">
-            <a href="" class="w-100"><img class="w-100" src="/images/previews/0-2.jpg" alt=""></a>
-            <a href="" class="w-100">Programmez votre portrait</a>
-        </div>
-        <div class="mb-3">
-            <a href="" class="w-100"><img class="w-100" src="/images/previews/0-2.jpg" alt=""></a>
-            <a href="" class="w-100">Partagez votre programme</a>
-        </div>
-        <div class="mb-3">
-            <a href="" class="w-100"><img class="w-100" src="/images/previews/0-2.jpg" alt=""></a>
-            <a href="" class="w-100">Prenez Scratch en main</a>
-        </div>
+        <h3 class="mb-4">Les autres cours liés à {{ page.outil }}</h3>
+
+        {% for r in site.resources %}
+            {% if r.outil == page.outil %}
+                <div class="mb-3">
+                    <a href="{{ r.url }}" class="w-100"><img class="w-100" src="{{ r.preview }}" alt=""></a>
+                    <a href="{{ r.url }}" class="w-100">{{ r.title }}</a>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+
         <a href="" class="w-100"><button type="button" class="btn btn-primary">Accéder au catalogue</button></a>
     </div>
 </div>

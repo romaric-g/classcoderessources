@@ -1,0 +1,18 @@
+<div class="container d-inline-flex row col-10 p-3 mt-3 border border-primary">
+    <div class="d-flex justify-content-row">
+        <h2 class="h3">{{include.path.title}}</h2>
+        <div class="d-flex justify-content-end col align-items-center mx-3">
+            <!--span>{{path.temps}} / {{path.niveau}}</span-->
+        </div>
+        <div class="col-3 mx-3">
+            <a class="btn btn-primary col " href="{{include.path.openclassroom}}">Voir sur OpenClassroom</a>
+        </div>
+    </div>
+    <p>{{include.path.description}}</p>
+    <div class="col-3 mt-1 d-flex flex-row-reverse">
+        <a class="btn btn-primary" href="{{include.path.url}}">
+            <!--BOUTON-->
+            Découvrir le parcours
+        </a>
+    </div>
+  </div>

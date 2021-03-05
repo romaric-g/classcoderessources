@@ -18,4 +18,8 @@ structure:
     resources:
       - 40-activites-pour-40-jours-quarantaine
       - creez-un-compte-sur-scratch
+  - name: Partie 2
+    resources:
+      - Controlez-le-chat-et-utilisez-des-boucles
+      - Decouvrez-l'interface-de-Scratch
 ---
