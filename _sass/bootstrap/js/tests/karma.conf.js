@@ -33,12 +33,7 @@ const reporters = ['dots']
 const detectBrowsers = {
   usePhantomJS: false,
   postDetection(availableBrowser) {
-    // On CI just use Chrome
-    if (ENV.CI === true) {
-      return ['ChromeHeadless']
-    }
-
-    if (availableBrowser.includes('Chrome')) {
+    if (ENV.CI === true || availableBrowser.includes('Chrome')) {
       return DEBUG ? ['Chrome'] : ['ChromeHeadless']
     }
 
@@ -51,6 +46,13 @@ const detectBrowsers = {
     }
 
     throw new Error('Please install Chrome, Chromium or Firefox')
+  }
+}
+
+const customLaunchers = {
+  FirefoxHeadless: {
+    base: 'Firefox',
+    flags: ['-headless']
   }
 }
 
@@ -122,6 +124,7 @@ if (BROWSERSTACK) {
     'karma-firefox-launcher',
     'karma-detect-browsers'
   )
+  conf.customLaunchers = customLaunchers
   conf.detectBrowsers = detectBrowsers
   conf.files = [
     'node_modules/jquery/dist/jquery.slim.min.js',
@@ -139,6 +142,7 @@ if (BROWSERSTACK) {
     'karma-coverage-istanbul-reporter'
   )
   reporters.push('coverage-istanbul')
+  conf.customLaunchers = customLaunchers
   conf.detectBrowsers = detectBrowsers
   conf.coverageIstanbulReporter = {
     dir: path.resolve(__dirname, '../coverage/'),

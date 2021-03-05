@@ -10,7 +10,6 @@
     - title: JavaScript
     - title: Build tools
     - title: Webpack
-    - title: Parcel
     - title: Accessibility
     - title: RFS
     - title: RTL
@@ -72,7 +71,6 @@
     - title: Modal
     - title: Navs & tabs
     - title: Navbar
-    - title: Offcanvas
     - title: Pagination
     - title: Popovers
     - title: Progress
