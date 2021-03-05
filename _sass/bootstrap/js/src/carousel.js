@@ -216,6 +216,7 @@ class Carousel extends BaseComponent {
   }
 
   dispose() {
+    super.dispose()
     EventHandler.off(this._element, EVENT_KEY)
 
     this._items = null
@@ -225,8 +226,6 @@ class Carousel extends BaseComponent {
     this._isSliding = null
     this._activeElement = null
     this._indicatorsElement = null
-
-    super.dispose()
   }
 
   // Private
@@ -253,7 +252,7 @@ class Carousel extends BaseComponent {
 
     // swipe left
     if (direction > 0) {
-      if (isRTL()) {
+      if (isRTL) {
         this.next()
       } else {
         this.prev()
@@ -262,7 +261,7 @@ class Carousel extends BaseComponent {
 
     // swipe right
     if (direction < 0) {
-      if (isRTL()) {
+      if (isRTL) {
         this.prev()
       } else {
         this.next()
@@ -350,14 +349,14 @@ class Carousel extends BaseComponent {
 
     if (event.key === ARROW_LEFT_KEY) {
       event.preventDefault()
-      if (isRTL()) {
+      if (isRTL) {
         this.next()
       } else {
         this.prev()
       }
     } else if (event.key === ARROW_RIGHT_KEY) {
       event.preventDefault()
-      if (isRTL()) {
+      if (isRTL) {
         this.prev()
       } else {
         this.next()
@@ -527,7 +526,7 @@ class Carousel extends BaseComponent {
   // Static
 
   static carouselInterface(element, config) {
-    let data = Data.get(element, DATA_KEY)
+    let data = Data.getData(element, DATA_KEY)
     let _config = {
       ...Default,
       ...Manipulator.getDataAttributes(element)
@@ -586,7 +585,7 @@ class Carousel extends BaseComponent {
     Carousel.carouselInterface(target, config)
 
     if (slideIndex) {
-      Data.get(target, DATA_KEY).to(slideIndex)
+      Data.getData(target, DATA_KEY).to(slideIndex)
     }
 
     event.preventDefault()
@@ -605,7 +604,7 @@ EventHandler.on(window, EVENT_LOAD_DATA_API, () => {
   const carousels = SelectorEngine.find(SELECTOR_DATA_RIDE)
 
   for (let i = 0, len = carousels.length; i < len; i++) {
-    Carousel.carouselInterface(carousels[i], Data.get(carousels[i], DATA_KEY))
+    Carousel.carouselInterface(carousels[i], Data.getData(carousels[i], DATA_KEY))
   }
 })
 
