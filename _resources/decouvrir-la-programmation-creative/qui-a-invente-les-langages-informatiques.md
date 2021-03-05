@@ -9,6 +9,7 @@ age: 8
 date: 13/12/2019
 videos: 
   - https://player.vimeo.com/video/158908172
+preview: /images/previews/preview-qui-a-invente-les-langages-informatiques.png
 ---
 
 # https://openclassrooms.com/courses/decouvrir-la-programmation-creative/existe-t-il-plusieurs-langages-informatiques

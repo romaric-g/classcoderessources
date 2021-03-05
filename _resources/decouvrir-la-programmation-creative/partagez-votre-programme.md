@@ -10,6 +10,7 @@ date: 13/12/2019
 videos: 
   - https://player.vimeo.com/video/162531999
   - https://player.vimeo.com/video/162532000
+preview: /images/previews/preview-partagez-votre-programme.png
 ---
 # https://openclassrooms.com/courses/decouvrir-la-programmation-creative/partagez-votre-premier-programme
 # https://pixees.fr/partagez-votre-programme/
