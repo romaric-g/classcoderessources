@@ -14,10 +14,10 @@
             <p>Découvrir la programmation créative <span class="font-weight-bold" style="color: #22B8BF;">></span> 3, 2, 1... Programmez ! <span style="color: #22B8BF; font-weight: bold;">></span> Qu’est-ce que la pensée informatique ?</p>
             <div class="row ml-0 mb-5">
                 <h1 class="w-100">Cours : Qu'est-ce que la pensée informatique ?</h1>
-                <div class="row ml-0 w-100">
-                    <span class="badge badge-primary">#Scratch</span>
-                    <span class="badge badge-primary ml-2">#ProgrammationCréative</span>
-                    <span class="badge badge-primary ml-2">#Cours</span>
+                <div class="d-flex flex-wrap ml-0 w-100">
+                    <span class="badge badge-primary mr-2 mb-2">#Scratch</span>
+                    <span class="badge badge-primary mr-2 mb-2">#ProgrammationCréative</span>
+                    <span class="badge badge-primary mb-2">#Cours</span>
                 </div>
             </div>
             <div class="row mb-5 justify-content-md-between">
@@ -88,6 +88,129 @@
                     <a href="" class="w-100"><button type="button" class="btn btn-primary">Accéder au catalogue</button></a>
                 </div>
             </div>
+                <div id="bgNoir"></div>
+                <button type="button" class="btn btn-primary d-flex" id="btnSommaire">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="openSommaire" width="16" height="16" fill="white" class="bi bi-arrow-down-left-square align-self-center" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.096 3.146a.5.5 0 1 1 .707.708L6.707 9.95h2.768a.5.5 0 1 1 0 1H5.5a.5.5 0 0 1-.5-.5V6.475a.5.5 0 1 1 1 0v2.768l4.096-4.097z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="closeSommaire" width="16" height="16" fill="white" class="bi bi-x-square align-self-center" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    <p class="mb-0 ml-2">Sommaire</p>
+                </button>
+                <div id="ContainerSommaire">
+                    <h2 class="px-2 pt-2">Découvrir la programmation créative</h2>
+                    <div id="accordion">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Partie 1 - 3, 2, 1... Programmez !
+                              </button>
+                            </h5>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <ol type = "1">
+                                    <li>Qu'est-ce que la pensée informatique ?
+                                        <br />
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 2px;" width="14" height="14" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                        </svg>
+                                        Introduction : qu'est-ce que la pensée informatique ?
+                                    </li>
+                                    <li>Prenez Scratch en main
+                                        <br />
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 2px;" width="14" height="14" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                        </svg>
+                                        Créez un compte sur Scratch
+                                        <br />
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 2px;" width="14" height="14" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                        </svg>
+                                        Découvrez l'interface de Scratch
+                                    </li>
+                                    <li>Programmez votre portrait
+                                        <br />
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 2px;" width="14" height="14" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                        </svg>
+                                        Contrôlez le chat et utilisez des boucles
+                                    </li>
+                                    <li>Partagez votre programme
+                                        <br />
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 2px;" width="14" height="14" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                        </svg>
+                                        Sauvegarde et partagez votre programme
+                                        <br />
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 2px;" width="14" height="14" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                        </svg>
+                                        Retrouvez les programmes Scratch dans un studio
+                                    </li>
+                                    <li>Qui a inventé les algorithmes ?</li>
+                                    <li>Comprenez les algorithmes avec le jeu du robot</li>
+                                    <li>Qui a inventé les langages informatiques ?</li>
+                                    <li>Comprenez les langages en jouant au robot</li>
+                                    <li>Transmettez grâce à la pédagogie active</li>
+                                    <li>Entraînez-vous en codant votre portrait avec Scratch</li>
+                                 </ol>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Partie 2 - Rendez votre programme interactif.
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Partie 3 - Créer un jeu avec tous les ingrédients des algorithmes. 
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    Partie 4 - Trouver l’algorithme le plus efficace.
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                              <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            <script src="./assets/js/boutonSommaire.js"></script>
+            <link href="./assets//css/default.css" rel="stylesheet" type="text/css" />
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        
         </div>
       </div>
     </main>

@@ -1,0 +1,29 @@
+#btnSommaire{
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    border: 0;
+}
+#bgNoir{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    display: none;
+}
+#closeSommaire{
+    display: none;
+}
+#ContainerSommaire{
+    display: none;
+    background-color: white;
+    width: 500px;
+    height: calc(90vh - 36px);
+    position: fixed;
+    right: 0;
+    top: calc(10vh + 36px);
+    overflow-y: scroll;
+}
