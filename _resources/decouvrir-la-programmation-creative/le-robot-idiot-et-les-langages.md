@@ -7,6 +7,7 @@ type: activity
 contenttype: debranchee
 age: 8
 date: 13/12/2019
+preview: /images/previews/preview-le-robot-idiot-et-les-langages.jpg
 ---
 
 # https://openclassrooms.com/courses/decouvrir-la-programmation-creative/comprenez-les-langages-en-jouant-au-robot
