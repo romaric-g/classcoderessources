@@ -2,7 +2,10 @@
     position: fixed;
     top: 10vh;
     right: 0;
-    border: 0;
+    width: 180px;
+}
+#btnSommaire svg{
+    margin-right: 10px;
 }
 #bgNoir{
     background-color: black;
@@ -21,9 +24,11 @@
     display: none;
     background-color: white;
     width: 500px;
-    height: calc(90vh - 36px);
+    height: calc(90vh - 38px);
     position: fixed;
     right: 0;
-    top: calc(10vh + 36px);
+    top: calc(10vh + 38px);
     overflow-y: scroll;
+    z-index: 10;
+    border-top-left-radius: 5px;
 }
