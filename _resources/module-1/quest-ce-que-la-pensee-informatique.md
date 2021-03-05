@@ -9,6 +9,7 @@ age:
 date: 13/12/2019
 videos:
   - https://player.vimeo.com/video/159348631?color=f18215&api=1&player_id=video_Player_0
+preview: /images/previews/preview-quest-ce-que-la-pensee-informatique.png
 ---
 # https://openclassrooms.com/courses/decouvrir-la-programmation-creative/introduction-qu-est-ce-que-la-pensee-informatique
 
